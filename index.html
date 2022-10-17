@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Pizzeria La Daniel</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="pizza, livrare, delivery, burgeri, Bucuresti, sector 1, non-stop, comanda, paste">
+        <meta name="description" content="Pizzerie non-stop delivery Bucuresti, sector 1. Livrare gratuita pentru orice comanda peste 50 de lei. Meniu variat cu pizza, burgeri, paste">
+        <meta name="author" content="Daniel Wagner">
+        <link rel="apple-touch-icon" sizes="180x180" href="./resources/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resources/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resources/ico/favicon-16x16.png">
+        <link rel="manifest" href="./resources/ico/site.webmanifest">
+        <link rel="shortcut icon" href="./resources/ico/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./resources/ico/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+            .c1 {
+                font-style: italic;
+                font-weight: bold;
+            }
+            #nav-searchbox {
+                margin: 0px;
+            }
+            .ul-meniu {
+                list-style-type: none;
+            }
+            #ul-contact {
+                list-style-type: none;
+            }
+            .nav-bar {
+                display: flex;
+            }
+            .nav-bar > ul{
+                width: 50%;
+                height: 50%;
+            }
+            .nav-bar ul {
+                padding-left: 40px;
+                list-style-type: none;
+                margin: 0px;
+            }
+            .nav-bar li{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Pizzeria La Daniel</h1>
+            <nav class="nav-bar">
+                <input id="nav-searchbox" type="text" placeholder="search...">
+                <button id="nav-button" type="button">Search</button>
+                <ul>
+                    <li class="c1"><a href="#oferte">Oferte</a></li>
+                    <li class="c1"><a href="#recomandate">Recomandate</a></li>
+                    <li class="c1"><a href="#meniu">Meniu</a></li>
+                    <li class="c1"><a href="#creare-cont">Creare cont</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="oferte">
+                <h2>Oferte</h2>
+                <p>Profita acum de ofertele noastre! Livrarea este <b>gratuita</b> pentru <em>orice</em> comanda peste 50 de lei.</p>
+                <section>
+                    <h3>Pizza Margherita 40cm</h3>
+                    <picture>
+                        <source srcset="./resources/images/margherita_small.png" media="(max-width: 600px)">
+                        <source srcset="./resources/images/margherita_medium.png" media="(max-width: 918px)">
+                        <img src="./resources/images/margherita_big.png" alt="Pizza Margherita 40cm" style="width:25%" title="Pizza Margherita 40cm">
+                    </picture>
+                    <p>Pret <s>45 lei</s>&nbsp;&nbsp;<b>38 lei</b></p>
+                    <details>
+                        <summary>Lista ingrediente</summary>
+                        <p>Blat pizza, sos de rosii, 2 x topping mozzarella, oregano</p>
+                    </details>
+                </section>
+                <section>
+                    <h3>Paste Carbonara</h3>
+                    <picture>
+                        <img src="./resources/images/carbonara.jpg" alt="Paste Carbonara" style="width:25%" title="Paste Carbonara">
+                    </picture>
+                    <p>Pret <s>32 lei</s>&nbsp;&nbsp;<b>27 lei</b></p>
+                    <details>
+                        <summary>Lista ingrediente</summary>
+                        <p>Paste din grau dur, sos gran cucina, bacon, parmezan</p>
+                    </details>
+                </section>
+            </section>
+            <br><br>
+            <section id="recomandate">
+                <h2>Recomandate</h2>
+                <p>Printre favoritele clientilor nostri se numara aceste retete clasice, dar cu un gust <em>aparte</em>.</p>
+                <section>
+                    <h3>Cheeseburger</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resources/images/cheeseburger_small.png" media="(max-width: 600px)">
+                            <source srcset="./resources/images/cheeseburger_medium.png" media="(max-width: 918px)">
+                            <img src="./resources/images/cheeseburger_big.png" alt="Poza Cheeseburger" style="width:25%" title="Cheeseburger">
+                        </picture>
+                        <figcaption style="width: 25%; text-align:center;">Cheeseburger - 40 lei</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>Salata Bulgareasca</h3>
+                    <figure>
+                        <picture>
+                            <img src="./resources/images/salata_bulgareasca.jpg" alt="Salata Bulgareasca" style="width:25%" title="Salata Bulgareasca">
+                        </picture>
+                        <figcaption style="width: 25%; text-align:center;">Salata Bulgareasca - 29 lei</figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section id="meniu">
+                <h2>Meniu</h2>
+                <ul class="ul-meniu">
+                    <li>Pizza</li>
+                    <li>Paste</li>
+                    <li>Burger</li>
+                    <li>Grill</li>
+                    <li>Garnituri</li>
+                    <li>Salate</li>
+                    <li>Desert</li>
+                    <li>Sosuri</li>
+                    <li>Bauturi
+                        <ul class="ul-meniu">
+                            <li>Alcoolice</li>
+                            <li>Racoritoare</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <p>Unele dintre dish-urile noastre clasice sunt inspirate din retetele unor chefi celebri. Doua dintre acestea, <em>Pastele Carbonara</em> si <em>Pizza Margherita</em> se regasesc in video-urile de mai jos. Vizionare placuta!</p>
+                <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/vcfNpDtVqOw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <a href="https://www.youtube.com/embed/D_2DBLAt57c" target="ifr-video">Carbonara</a>
+                <a href="https://www.youtube.com/embed/vcfNpDtVqOw" target="ifr-video">Pizza Margherita</a>
+            </div>
+            <div>
+                <p>Pentru mai multe informatii despre ingredientele folosite, contactati furnizorul nostru principal, <a href="https://www.metro.ro/">Metro</a>.</p>
+                <a href="./resources/meniu.pdf" download>PDF Meniu</a>
+            </div>
+        </main>
+        <footer>
+            <div>
+            <p>Contact</p>
+            <address>
+                <ul id="ul-contact">
+                    <li><a href="tel:+40731330330">Telefon</a></li>
+                    <li><a href="mailto:pizzaladaniel@gmail.com">Email</a></li>
+                    <li><a href="https://wa.me/40721333444">WhatsApp</a></li>
+                    <li><a href="https://goo.gl/maps/vuH86JcmhKCnrFEo9">Locatia Noastra</a></li>
+                </ul>
+            </address>
+            </div>
+            <a href="#">Link Top</a>
+            <br>
+            <small>
+                &copy;<time datetime="2022-10-10T05:50:34.123+02:00">10 Octombrie 2022</time>
+            </small>
+        </footer>
+    </body>
+</html>
