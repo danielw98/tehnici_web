@@ -1,0 +1,55 @@
+body{
+    --culoare-text: #301B11;
+    --culoare-umbra: #CCC7BC;
+    --font-family-default: 'Quicksand';
+    --font-family-marit: 'Merriweather Sans';
+    --marime-font-1600: 16px;
+    --marime-font-1000: 12px;
+    --marime-font-700: 10px;
+    --margin-main: 7%;
+    --padding-main: 10px;
+
+    --culoare-tabel-even:#DF7543;
+    --culoare-tabel-odd:#D4591F;
+    --culare-rand-selectat:#AF400D;
+    --culoare-head-tabel: #B54D1D;
+    --padding-tabel: 10px;
+    --inaltime-meniu: 40px;
+    --latime-buton-meniu: 230px;
+
+    --culoare-meniu:#FFF9EB;
+    --culoare-text-meniu:#301B11;
+    --culoare-buton-search: #301B11;
+    
+    --broder-radius-details-summary: 10px;
+    --margin-details-summary: 2%;
+    --latime-buton-details-summary: 300px;
+    --culoare-buton-summary: #FFF9EB;
+    --culoare-tooltip-details:#B54D1D;
+    --padding-details: 10px;
+    --padding-summary: 20px;
+
+    --border-radius-tabel: 20px;
+
+    --margin-oferte-favorite: 2%;
+    --culoare-background-oferte-favorite: #B54D1D;
+    --latime-imagine-oferte-favorite: 400px;
+    --inaltime-text-oferte-favorite: 150px;
+    --padding-oferte-favorite: 10px;
+
+    --latime-tab-iframe: 150px;
+    --padding-tab-iframe: 10px;
+    --border-radius-tab-iframe: 5px;
+    --margin-right-border-iframe: 20px;
+    --culoare-tab-iframe: #FFF9EB;
+
+    --padding-tooltip-link-top: 1px;
+    --culoare-tooltip-link-top: #301B11;
+    --culoare-background-link-top:#FFF9EB;
+    --culoare-sageata-link-top: #301B11;
+    --culoare-umbra-link-top: #a3a09a;
+
+    --culoare-buton-contact: #FFF9EB;
+    --border-radius-buton-contact: 10px;
+    --padding-buton-contact: 20px;
+}
