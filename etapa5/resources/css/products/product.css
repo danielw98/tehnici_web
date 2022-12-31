@@ -1,0 +1,35 @@
+h1{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+#art-prod{
+    border-radius: 10px;
+    background-color: var(--dark-orange);
+    overflow: hidden;
+    color: var(--dark-red);
+    padding: 3rem;
+    margin-bottom: 20px;
+    width: 50%;
+    font-weight:bold;
+}
+#art-prod h2{
+    font-weight: bold;
+}
+#art-prod h2 span{
+    color: var(--white);
+    font-weight: normal;
+}
+.prod-val-price, .prod-val-state, .prod-val-ingredients, .prod-val-date, .prod-val-cutlery, .prod-val-category, .prod-val-about, .prod-val-calories{
+    font-weight: normal !important;
+    color: var(--white);
+}
+.prod-img img{
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+}
+@media screen and (max-width: 700px){
+    #art-prod{
+        width:95%;
+    }
+}

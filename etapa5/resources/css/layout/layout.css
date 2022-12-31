@@ -1,0 +1,371 @@
+/* elemente principale */
+body {
+    color: var(--black);
+    background-color: var(--background);
+    font-size: var(--font-size-1600) !important;
+    font-family: var(--font-family-default), serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+main {
+    margin-left:7%;
+    margin-right:7%;
+}
+
+footer {
+    margin-top: auto;
+    margin-left: 7%;
+}
+
+header #website-title {
+    display: none;
+}
+
+header #banner {
+    display: none;
+}
+
+
+/* grid layout */
+#page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"z-reason z-reason z-reason z-reason"
+                        "z-reason z-reason z-reason z-reason"
+                        "z-tabel z-tabel z-calendar z-calendar"
+                        "z-tabel z-tabel z-announcements z-announcements"
+                        "z-online-users z-users-data z-users-data z-server-data"
+                        "z-custom z-custom z-custom z-custom"
+}
+
+#page-grid > *{
+    padding: 10px;
+}
+
+#reason {
+    grid-area: z-reason;
+}
+#calendar {
+    grid-area: z-calendar;
+}
+#winners-table {
+    grid-area: z-tabel;
+}
+#announcements {
+    grid-area: z-announcements;
+}
+#online-users {
+    grid-area: z-online-users;
+}
+#users-data {
+    grid-area: z-users-data;
+}
+#server-data {
+    grid-area: z-server-data;
+}
+
+#custom {
+    grid-area: z-custom;
+}
+
+.heading-1, .heading-2  {
+    font-family: var(--font-family-large), serif;
+    margin-top: 0.5%;
+}
+
+/* imagine background */
+.image {
+    background-image: url(/resources/images/banner/pizza-point-large.png);
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+
+/* butoane -> de ce noi? */
+.details-summary {
+    display: inline-block;
+    margin-right: 2%;
+    margin-top: 0.5%;
+}
+.details {
+    display: none;
+    color: var(--white);
+    padding: 0.5% 0;
+    text-align: center;
+    background: var(--dark-orange);
+    border-radius: 10px;
+    width: 300px;
+    font-size: var(--font-size-1600);
+}
+.summary {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 5px 5px 8px var(--light-grey);
+    text-decoration: none;
+    text-align: center;
+    padding: 5%;
+    width: 300px;
+    font-size: var(--font-size-1600);
+}
+
+.summary:focus {
+    margin-bottom: 8em;
+    pointer-events: none;
+}
+
+.summary:focus + .details {
+    display: block;
+    position: absolute;
+    margin-top: -6em;
+}
+.details-summary .details::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--dark-orange) transparent;
+}
+
+/* winners table */
+#winners-table table {
+    color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+}
+#winners-table table th {
+    font-family: var(--font-family-large), serif;
+}
+#winners-table table, #winners-table th, #winners-table td {
+    border: 1px solid var(--white);
+    border-collapse: collapse;
+}
+#winners-table th, #winners-table td {
+    padding: 10px;
+}
+#winners-table th {
+    background-color: var(--dark-orange);
+}
+#winners-table table tbody tr:nth-child(even) {
+    background-color: var(--light-orange);
+}
+#winners-table table tbody tr:nth-child(odd) {
+    background-color: var(--orange);
+}
+#winners-table table tbody tr:hover {
+    background-color: var(--red);
+    transition: background-color 0.5s linear;
+}
+#winners-table table tfoot tr {
+    background-color: var(--orange);
+    text-align: center;
+}
+#winners-table table caption {
+    caption-side: bottom;
+    color: var(--black);
+    padding: 5px;
+    text-align: center;
+}
+
+#winners-table {  
+    overflow-x: auto;
+}
+
+#winners-table table th, td { 
+    min-width: 60px;
+}
+
+/* taburi iframe */
+#video {
+    width: max-content;
+}
+
+#link-video a {
+    display: block;
+    width: 130px;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: auto;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 6px 3px var(--grey);
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-family-large), serif;
+    color: var(--black);
+    padding: 2%;
+    background-color: var(--white);
+    transition: background-color 0.5s linear;
+}
+
+#link-video{
+    display: flex;
+    justify-content: center;
+}
+
+#link-video a:hover{
+    background-color: var(--white);
+}
+
+#video iframe{
+    border: none;
+}
+
+
+/* link-top */
+#link-top {
+    position:fixed;
+    opacity:0.5;
+    bottom:0.3em;
+    left:0.3em;
+    width:3rem;
+    height:3rem;
+    line-height:3.25rem;
+    text-align:center;
+    text-decoration: none;
+    box-shadow: 0 0 6px 2px var(--grey) inset;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: var(--white);
+    transition: opacity 0.5s linear, box-shadow 0.5s linear;
+}
+
+#arrow {
+    transition: transform 0.5s linear;
+    color: var(--black);
+    scale: 2;
+}
+
+#link-top:hover {
+    opacity:1;
+}
+
+#link-top:hover #arrow {
+    transform: scale(1.5);
+}
+
+#link-top:hover .my-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.my-tooltip {
+    visibility: hidden;
+    background-color: var(--black);
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 5%;
+    z-index: 1;
+    bottom: 100%;
+    left: 100%;
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+}
+.my-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent  var(--black) transparent transparent;
+}
+
+/* contact */
+.buton-contact{
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 5px 5px 8px var(--light-grey);
+    padding: 20px;
+    text-align: center;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    font-size: var(--font-size-1600);
+}
+.buton-contact a{
+    text-decoration: none;
+}
+
+/* stilizare link-uri */
+.link{
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* video-vtt */
+video::cue{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1%;
+}
+.btn:focus, .btn{
+    border: none !important;
+}
+
+/* favourites */
+#favourites .favourites-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod-grid-fav{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod-grid-fav div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.product-fav{
+    background-color: var(--dark-orange);
+    overflow: hidden;
+    color: var(--dark-red);
+    border-radius: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.product-fav h2{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+.product-fav h2 a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: normal;
+}
+.product-fav h2 a:hover{
+    color: var(--dark-red);
+    text-decoration: none;
+    font-weight: normal;
+}
+.product-fav figure img{
+    border-radius: 10px;
+}
+.product-fav .product-info-fav{
+    list-style-type: none;
+    padding-left: 0;
+}
+.product-fav p.add-fav{
+    display: inline;
+}
+.val-price-fav, .val-state-fav, .val-ingredients-fav, .val-date-fav, .val-cutlery-fav, .val-category-fav, .val-about-fav, .val-calories-fav, .select-fav i{
+    font-weight: normal !important;
+    color: var(--white);
+}
+.inp-add-fav{
+    vertical-align: middle;
+}

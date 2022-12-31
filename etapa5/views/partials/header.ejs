@@ -1,0 +1,56 @@
+<div>
+    <div id="watermark">
+        Wagner Stefan Daniel
+    </div>
+    <div id="banner">
+        Acesta este un proiect școlar!
+    </div>
+    <div class="image"></div>
+    <div id="background-menu">
+        <label id="hamburger" for="ch-menu">
+            <img src="/resources/images/miscellaneous/hamburger-icon.png" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/home"><div id="home"><i class="fa-solid fa-house"></i><span> Acasa</span></div></a>
+                    <ul>
+                        <li><a href="/home#reason">De ce noi?</a></li>
+                        <li><a href="/home#recipe">Reteta</a></li>
+                        <li><a href="/home#favourites">Favorite</a></li>
+                        <li><a href="/home#menu">Meniu</a></li>
+                        <li><a href="/home#dishes">Dish-uri</a></li>
+                        <li><a href="/home#gallery">Galerie</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about"><div id="about">Despre</div></a>
+                </li>
+                <li>
+                    <a href="/gallery"><div id="gallery">Galerie</div></a>
+                </li>
+                <li>
+                    <div id="products">Produse</div>
+                    <ul>
+                        <li><a href="/products">Toate</a></li>
+                        <% 
+                            for(let idx in locals.types) { %>
+                            <li><a href="/products?tip=<%- locals.types[idx].unnest %>"><%- locals.types[idx].unnest %></a></li>
+                        <% } %>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/login"><div id="login">Autentificare</div></a>
+                </li>
+                <li><button id="theme">
+                    <span id="moon"><i class="fa-solid fa-moon"></i></span>
+                    <span id="sun"><i class="fa-solid fa-sun"></i></span>
+                </button></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="website-title">
+        Pizza Point
+    </div>
+</div>

@@ -1,0 +1,35 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+    $primary: #D4591F,
+    $secondary: #B54D1D,
+    $light: #FFF9EB,
+    $dark: #301B11,
+    
+    $grid-breakpoints: (
+        xs: 0,
+        sm: 550px,
+        md: 700px,
+        lg: 1000px,
+        xl: 1200px,
+        xxl: 1500px
+    ),
+
+    $border-radius: .375rem,
+    $border-radius-sm: .1875rem,
+    $border-radius-lg: .625rem,
+    $border-radius-xl: .9375rem,
+    $border-radius-2xl: 1.5rem,
+    $border-radius-pill: 50rem,
+
+    $h1-font-size: 2.3rem,
+    $h2-font-size: 2rem,
+    $h3-font-size: 1.7rem,
+    $h4-font-size: 1.4rem,
+    $h5-font-size: 1.1rem,
+    $h6-font-size: 1rem,
+
+    $font-family-base: 'Quicksand',
+    $headings-font-family: 'Fira Sans Condensed',
+
+    $box-shadow: 5px 5px 8px #CCC7BC
+);
+// sass .\resources\sass\bootstrap-custom.scss .\resources\css\libraries\bootstrap-custom.css

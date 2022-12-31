@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <script type="text/javascript" src="/resources/js/favourite-products.js"></script>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <main>
+            <div id="page-grid">
+                <div id="reason">
+                    <h1 class="text-dark">De ce noi?</h1>
+                    <div class="details-summary">
+                        <button class="summary"><i class="fa-solid fa-stopwatch"></i> Livrare in maxim 1h</button>
+                        <span class="details">Livram oriunde in Bucuresti in maxim 1h</span>
+                    </div>
+                    <div class="details-summary">
+                        <button class="summary"><i class="fa-solid fa-clock"></i> Deschis 24/7</button>
+                        <span class="details">Livram de luni pana duminica, indiferent de ora</span>
+                    </div>
+                    <div class="details-summary">
+                        <button class="summary"><i class="fa-solid fa-truck"></i> Livrare Gratuita</button>
+                        <span class="details">Oferim livrare gratuita pentru orice comanda de minim 70 de lei</span>
+                    </div>
+                    <div class="details-summary">
+                        <button class="summary"><i class="fa-solid fa-pizza-slice"></i> Bucatari cu experienta</button>
+                        <span class="details">Bucatari experimentati in bucataria traditional italiana</span>
+                    </div>
+                </div>
+                <div id="winners-table">
+                    <h1 class="heading-1">Castigatorii extragerii aniversare</h1>
+                    <table>
+                        <caption>Pentru a va ridica premiul, va rugam sa ne contactati la <a role="button" href="mailto:pizzapoint@gmail.com" id="bootstrap-button" class="btn text-dark bg-light shadow active" aria-pressed="true"><i class="fa-solid fa-link"></i>pizzapoint@gmail.com</a></caption>
+                        <thead>
+                            <tr>
+                                <th>Castigator</th>
+                                <th>Premiu</th>
+                                <th>Detalii</th>
+                                <th>Data bon</th>
+                                <th>Numar bon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cina gratuita timp de un an</td>
+                                <td>Cina gratuita pe perioada anului calendaristic urmator</td>
+                                <td>12/10/22</td>
+                                <td>1102</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Giftcard</td>
+                                <td>Giftcard in valoare de 500 de lei</td>
+                                <td>23/09/22</td>
+                                <td>124</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Masa in doi</td>
+                                <td>O masa gratuita alturi de o persoana draga tie</td>
+                                <td>10/10/22</td>
+                                <td>223</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Carte de retete</td>
+                                <td>Cartea cu retetele dish-urilor noastre celebre</td>
+                                <td>30/09/22</td>
+                                <td>512</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Castigatorii extragerii aniversare de anul acesta</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="calendar">
+                    <h1 class="heading-1">Calendar</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quibusdam voluptatum. Laborum voluptates eos amet dolorem eius ea iste nemo veritatis nihil, eaque sed iusto tempore ratione earum maiores, fugit, aliquid dignissimos provident? Saepe blanditiis atque quis nulla numquam a. Ullam mollitia deserunt aut itaque nemo pariatur, amet error impedit.</p>
+                </div>
+                <div id="announcements">
+                    <h1 class="heading-1">Anunturi</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse repudiandae doloremque dolor! Possimus repellendus reiciendis repellat expedita explicabo temporibus aspernatur et ab iste excepturi harum nostrum, molestias non illum ipsum inventore modi quisquam sapiente fugiat consequuntur, quam officia error autem. Tempore dolore illo cum quod, nobis vero vitae. Odio?</p>
+                </div>
+                <div id="online-users">
+                    <h1 class="heading-1">Lista de utilizatori online</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint illum itaque quos consequuntur quas sit voluptatem culpa delectus eos exercitationem necessitatibus, enim doloremque. Sequi voluptatem voluptate unde nulla omnis eligendi assumenda eum. Cum, saepe impedit necessitatibus earum illo eos possimus provident et nihil aliquid in laboriosam iste ipsa! Magni, ea.</p>
+                </div>
+                <div id="users-data">
+                    <h1 class="heading-1">Date despre utilizator si statistici</h1>
+                    <p>IP-ul curent: <b><%- locals.userIp %></b></p>
+                </div>
+                <div id="server-data">
+                    <h1 class="heading-1">Date despre site si server</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus consequuntur magni illo nesciunt voluptate delectus quis aut. Expedita aliquam praesentium incidunt qui cupiditate! Provident odit animi ratione a, veniam eligendi, corporis rem doloremque nihil impedit quam tempora iusto illo distinctio voluptas inventore molestiae quia. Quo sint provident voluptates non.</p>
+                </div>
+                <div id="custom">
+                    <div id="recipe">
+                        <h1 class="heading-1">Reteta proprie</h1>
+                        <p>V-am pregatit un video <em>savuros</em> in care documentam o parte din procesul de preparare a retetei noastre proprii, <b>Pizza Point</b>&#8482;.</p>
+                        <video width="560" height="315" poster="/resources/images/miscellaneous/poster.png" controls preload="auto">
+                            <source src="/resources/video/video.mp4" type="video/mp4">
+                            <source src="/resources/video/video.ogv" type="video/ogv">
+                            <track default src="/resources/vtt/caption_ro.vtt" kind="captions" srclang="ro" label="romana">
+                            <track src="/resources/vtt/caption_en.vtt" kind="captions" srclang="en" label="engleza">
+                        </video>
+                    </div>
+                    <div id="favourites">
+                        <h1 class="heading-1">Favoritele clientilor</h1>
+                        <p>Printre favoritele clientilor nostri se numara aceste retete clasice, dar cu un gust aparte. <b>Nu uita!</b> livrarea este <b>gratuita</b> pentru orice comanda peste 70 de lei.</p>
+                        <div class="favourites-grid">
+                            <%  var favourites = [];
+                                for(let prod of locals.products) { 
+                                    if(prod.id == 1 || prod.id == 8 || prod.id == 12 || prod.id == 21) {
+                                        favourites.push(prod);
+                                    }
+                                }
+                                for(let fav of favourites){
+                            %>
+                            <article class="product-fav">
+                                <h2 class="name-fav">Nume: <a href="/product/<%-fav.id %>" ><span class="val-name-fav"><%- fav.nume%></span></a></h2>
+                                <div class="prod-grid-fav">
+                                    <div>
+                                        <figure>
+                                            <a href="/product/<%-fav.id %>"><img src="/resources/images/products/large/<%- fav.imagine %>" style="width: 100%" alt="[imagine <%- fav.nume %>]"></a>
+                                        </figure>
+                                        <ul class="product-info-fav">
+                                            <li>Pret: <span class="val-price-fav"><%- fav.pret%> ron</span></li>
+                                            <li>Stare produs: <span class="val-state-fav"><%- fav.congelat%></span></li>
+                                            <li class="ingredients-fav">Ingrediente: <span class="val-ingredients-fav"><%- fav.ingrediente%></span></li>
+                                            <li>Data adaugarii: <time class="val-date-fav"><%- fav.data_adaugare%></time></li>
+                                            <li>Tacamuri incluse: <span class="val-cutlery-fav"><%- fav.primeste_tacamuri%></span></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="category-fav">Tip ingrediente: <span class="val-category-fav"><%- fav.tip_ingredient%></span></p>
+                                        <p class="about-fav">Descriere: <span class="val-about-fav"><%- fav.descriere%></span></p>
+                                        <p class="add-fav">Cumpara produsul: </p>
+                                        <label class="select-fav">
+                                            <input type="checkbox" class="inp-add-fav" value="<%-fav.id %>" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </div>
+                            </article>
+                            <% }%>
+                        </div>
+                    </div>
+                    <div id="menu">
+                        <h1 class="heading-1">Meniu</h1>
+                        <p>Pentru comenzi telefonice puteti descarca meniul in varianta <a class="link" href="/resources/Meniu.pdf" download>PDF</a>.</p>
+                        <p>Pentru mai multe informatii despre ingredientele folosite, contactati furnizorul nostru principal, <a class="link" href="https://www.metro.ro/">Metro</a>.</p>
+                    </div>
+                    <div id="dishes">
+                        <h1 class="heading-1">Dish-uri</h1>
+                        <p>Unele dintre <i>dish</i>-urile noastre clasice sunt inspirate din retele unor chefi celebri. Doua dintre acestea, <em>Pastele Carbonara</em> si <em>Pizza Margherita</em> se regasesc in video-urile de mai jos. Vizionare placuta!</p>
+                        <div id="video">
+                            <div id="link-video">
+                                <a href="https://www.youtube.com/embed/D_2DBLAt57c" target="ifr-video">Carbonara</a>
+                                <a href="https://www.youtube.com/embed/vcfNpDtVqOw" target="ifr-video">Pizza Margherita</a>
+                            </div>
+                            <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/vcfNpDtVqOw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                        </div>
+                    </div>
+                    <div id="gallery">
+                        <%- include('../partials/gallery/static-gallery'); %>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>

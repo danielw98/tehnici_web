@@ -1,0 +1,14 @@
+{
+  "notFound": {
+    "title": "Eroare 404",
+    "text": "Pagina cautata nu exista.",
+    "image": "/resources/images/errors/not-found/not-found.png",
+    "credits": "Autor: Erik Mclean pe Unsplash"
+  },
+  "forbidden": {
+    "title": "Eroare 403",
+    "text": "Nu aveti acces la aceasta pagina.",
+    "image": "/resources/images/errors/forbidden/forbidden.png",
+    "credits": "Autor: Dim Hou pe Unsplash"
+  }
+}

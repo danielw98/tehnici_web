@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <script type="text/javascript" src="/resources/js/product.js"></script>
+        <%- include("../partials/head") %>     
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header") %>
+        </header>
+        <main>
+            <section>
+                <h1>Pagina produs</h1>
+                    <article id="art-prod">
+                        <h2>Nume: <span class="prod-val-name"><%- locals.prod.nume %></span></h2>
+                        <div>
+                            <figure class="prod-img">
+                                <img  src="/resources/images/products/large/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                            </figure>
+                            <p>Tip ingrediente: <span class="prod-val-category"><%- prod.tip_ingredient%></span></p>
+                            <p>Descriere: <span class="prod-val-about"><%- locals.prod.descriere%></span></p>
+                            <p>Pret: <span class="prod-val-price"><%- locals.prod.pret%> ron</span></p>
+                            <p>Stare produs: <span class="prod-val-state"><%- locals.prod.congelat%></span></p>
+                            <p class="prod-ingredients">Ingrediente: <span class="prod-val-ingredients"><%- locals.prod.ingrediente%></span></p>
+                            <p>Data adaugarii: <time class="prod-val-date"><%- locals.prod.data_adaugare%></time></p>
+                            <p>Tacamuri incluse: <span class="prod-val-cutlery"><%- locals.prod.primeste_tacamuri%></span></p>
+                            <p>Calorii per 100g: <span class="prod-val-calories"><%- locals.prod.calorii%> kcal</span></p>
+                        </div>
+                    </article>
+            </section>
+        </main>
+        <footer>
+            <%- include("../partials/footer") %>
+        </footer>
+    </body>
+</html>

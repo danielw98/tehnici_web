@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <script type="text/javascript" src="/resources/js/products.js"></script>
+        <%- include("../partials/head") %>
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header") %>
+        </header>
+        <main>
+            <h1>Filtre</h1>
+            <div id="filters">
+                <div id="div-name">
+                    <label for="inp-name">Nume</label>
+                    <textarea id="inp-name" rows="1" cols="10"></textarea>
+                </div>
+                <div id="div-about">
+                    <label for="inp-about">Descriere</label>
+                    <input type="text" id="inp-about">
+                </div>
+                <div id="div-new">
+                    <label for="i_ch">Noutati</label>
+                <%
+                    var curr_date = new Date();
+                    curr_date.setMonth(curr_date.getMonth() - 1);
+                    var months=['Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'];
+                    var new_date = curr_date.getDate() + " " + months[curr_date.getMonth()] + " " + curr_date.getFullYear();
+                %>
+                    <input type="checkbox" id="i_ch" value="<%- new_date%>">Adaugat dupa <%- new_date%>
+                </div>
+                <div id="div-ingredients">
+                    <span>Tipuri ingrediente</span>
+                    <ul id="ul-radio">
+                        <li><label>
+                            <input id="i_rad0" checked name="gr_rad" value="toate" type="radio">
+                            toate
+                        </label></li>
+                        <li><label>
+                            <input id="i_rad1" name="gr_rad" value="vegetariene" type="radio">
+                            vegetariene
+                        </label></li>
+                        <li><label>
+                            <input id="i_rad2" name="gr_rad" value="vegane" type="radio">
+                            vegane
+                        </label></li>
+                        <li><label>
+                            <input id="i_rad3" name="gr_rad" value="non-vegane/vegetariene" type="radio">
+                            non-vegane/vegetariene
+                        </label></li>
+                    </ul>
+                </div>
+                <div id="div-price">
+                    <label for="inp-price">Pret minim</label>
+                    <span>6 </span><input type="range" id="inp-price" value="6" min="6" max="119"><span> 119</span><span id="infoRange"> (6)</span>
+                </div>
+                
+                <div id="div-calories">
+                    <label for="sel-calories">Calorii</label>
+                    <select id="sel-calories" multiple>
+                        <option id="sel-all-calories" selected value="toate">oricate</option>
+                        <option value="0-100">&lt; 100</option>
+                        <option value="100-200">100-200</option>
+                        <option value="200-300">200-300</option>
+                        <option value="300-400">300-400</option>
+                        <option value="400-500">&gt; 400</option>
+                    </select>
+                </div>
+               
+                <div id="div-state">
+                    <label for="inp-state">Stare produs</label>
+                    <input list="state" id="inp-state">
+                    <datalist id="state">
+                        <option value="congelat">congelat</option>
+                        <option value="decongelat">decongelat</option>
+                    </datalist>
+                </div>
+
+                <div id="div-cutlery">
+                    <label for="sel-cutlery">Tacamuri incluse</label>
+                    <select id="sel-cutlery">
+                        <option id="sel-all-cutlery" selected value="oricare">nerelevant</option>
+                        <option value="da">da</option>
+                        <option value="nu">nu</option>
+                    </select>
+                </div>
+                <p id="sum"></p>
+                <p id="filter-buttons">
+                    <button id="filter" class="btn text-dark bg-light shadow">Filtreaza</button> 
+                    <button id="reset" class="btn text-dark bg-light shadow">Reseteaza</button>
+                    <button id="calcSum" class="btn text-dark bg-light shadow">Calculeaza suma preturilor</button><br>
+                    <button id="sortAsc" class="btn text-dark bg-light shadow">Sorteaza crescator dupa nume</button>
+                    <button id="sortDesc" class="btn text-dark bg-light shadow">Sorteaza descrescator dupa nume</button> 
+                </p>
+            </div>
+            <section id="products">
+                <h1>Produse</h1>
+                <p id="no-products">Nu s-au putut gasi produse conform filtrarii curente.</p>
+                <div class="products-grid">
+                    <% for(let prod of locals.products) { %>
+                        <article class="product">
+                            <h2 class="name">Nume: <a href="/product/<%-prod.id %>" ><span class="val-name"><%- prod.nume%></span></a></h2>
+                            <div class="prod-grid">
+                                <div>
+                                    <figure>
+                                        <a href="/product/<%-prod.id %>"><img src="/resources/images/products/large/<%- prod.imagine %>" style="width: 100%" alt="[imagine <%- prod.nume %>]"></a>
+                                    </figure>
+                                    <ul class="product-info">
+                                        <li>Pret: <span class="val-price"><%- prod.pret%> ron</span></li>
+                                        <li>Stare produs: <span class="val-state"><%- prod.congelat%></span></li>
+                                        <li class="ingredients">Ingrediente: <span class="val-ingredients"><%- prod.ingrediente%></span></li>
+                                        <li>Data adaugarii: <time class="val-date"><%- prod.data_adaugare%></time></li>
+                                        <li>Tacamuri incluse: <span class="val-cutlery"><%- prod.primeste_tacamuri%></span></li>
+                                        <li>Calorii per 100g: <span class="val-calories"><%- prod.calorii%> kcal</span></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="category">Tip ingrediente: <span class="val-category"><%- prod.tip_ingredient%></span></p>
+                                    <p class="about">Descriere: <span class="val-about"><%- prod.descriere%></span></p>
+                                    <p class="add">Cumpara produsul: </p>
+                                    <label class="select">
+                                        <input type="checkbox" class="inp-add" value="<%-prod.id %>" autocomplete="off">
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                    <% }%>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <%- include("../partials/footer") %>
+        </footer>
+    </body>
+</html>
