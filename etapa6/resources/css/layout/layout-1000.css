@@ -1,0 +1,35 @@
+body {
+    font-size: var(--font-size-1000) !important;
+}
+.image{
+    background-image: url(/resources/images/banner/pizza-point-medium.png);
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+#video iframe, video{
+    width: 400px;
+    height: 255px;
+}
+#offers>div>div, #favourites>div>div {
+    width: 300px;
+    height: 125px;
+}
+.btn{
+    font-size: var(--font-size-1000) !important;
+}
+.details {
+    font-size: var(--font-size-1000);
+}
+.summary {
+    font-size: var(--font-size-1000);
+}
+.buton-contact{
+    font-size: var(--font-size-1000);
+}
+.heading-1{
+    font-size: calc(var(--font-size-1000) * 2.5) !important;
+}
+.heading-2{
+    font-size: calc(var(--font-size-1000) * 2) !important;
+}

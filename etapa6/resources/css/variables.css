@@ -1,0 +1,38 @@
+body{
+    /* FONTS */
+    --font-family-default: 'Quicksand';
+    --font-family-large: 'Fira Sans Condensed';
+    
+    /* FONT SIZES */
+    --font-size-1600: 16px;
+    --font-size-1000: 12px;
+    --font-size-700: 10px;
+    
+    /* COLORS */
+    --background: white;
+    --white: #FFF9EB;
+    --light-grey: #CCC7BC;
+    --grey: #a3a09a;
+    --red: #AF400D;
+    --light-orange: #DF7543;
+    --orange: #D4591F;
+    --dark-orange: #B54D1D;
+    --dark-red: #471305;
+    --black: #301B11;
+}
+
+body.dark{
+    /* COLORS */
+    --background: #b8b6b1;
+    --white: #afaa9e;
+    --light-grey: #807c73;
+    --grey: #7b7873;
+    --red: #6f2908;
+    --light-orange: #a75731;
+    --orange: #943e15;
+    --dark-orange: #773313;
+    --dark-red: #2f0c03;
+    --black: #1e110b;
+
+    background-color: var(--background);
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <main>
+            <h1 class="heading-1"><%- locals.title %></h1>
+            <h2 class="heading-2"><%- locals.text %></h2>
+            <img src="<%- locals.image %>" style="width:90vw; margin-left:auto; margin-right:auto;">
+            <p><%- locals.credits %></p>
+        </main>
+        <footer>
+          <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>

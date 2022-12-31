@@ -1,0 +1,112 @@
+@page :left {
+  margin-left: 2.5cm;
+  margin-right: 0.5cm;
+}
+
+@page :right {
+  margin-right: 2.5cm;
+  margin-left: 0.5cm;
+}
+
+header, body {
+  color: black !important;
+}
+
+header {
+  page-break-after: always;
+  text-align: center;
+}
+
+header #website-title {
+  text-decoration: underline;
+  font-size: 2.5em;
+  display: inline-block;
+  font-family: var(--font-family-large);
+  margin-top: 50%;
+	text-align: center;
+  color: black !important;
+}
+
+header #banner{
+  border: 2px dashed black;
+  width: 80%;
+  display: inline-block;
+  color: black !important;
+}
+
+header #watermark {
+  width: 100px;
+  height: 2cm;
+  border: 5px double black;
+  opacity: 0.65;
+  position: fixed;
+  z-index: 10;
+  color: black !important;
+  
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-grid {
+  display: block;
+}
+
+footer {
+  page-break-before: always;
+}
+
+h1, h2 {
+  font-weight: normal !important;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: normal !important;
+}
+
+b{
+  font-weight: normal !important;
+}
+
+em{
+  font-style: normal !important;
+}
+
+i{
+  font-style: normal !important;
+}
+
+nav, #background-menu, .image {
+  display: none;
+}
+
+video, figure, iframe, #video, #link-video, #container-link-top {
+  display: none;
+}
+
+#favourites .favourites-product {
+  display: none;
+}
+
+#offers .offers-product {
+  display: none;
+}
+
+table tbody tr, table th, table tfoot tr{
+  background-color: transparent !important;
+  color: black !important;
+}
+
+table, table th, table td{
+  border-color: black !important;
+}
+
+.summary, .buton-contact, #bootstrap-button {
+  border: 1px solid black !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}

@@ -1,0 +1,43 @@
+body {
+    font-size: var(--font-size-700)  !important;
+}
+
+#page-grid {
+    display: block;
+}
+
+.image{
+    background-image: url(/resources/images/banner/pizza-point-small.png);
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+#winners-table table, #winners-table th, #winners-table td {
+    border: none;
+}
+#offers>div>div, #favourites>div>div {
+    width: 200px;
+    height: 100px;
+}
+.details {
+    font-size: var(--font-size-700);
+}
+.summary {
+    font-size: var(--font-size-700);
+}
+.buton-contact{
+    font-size: var(--font-size-700);
+}
+#video iframe, video {
+    width: 350px;
+    height: 196px;
+}
+.btn{
+    font-size: var(--font-size-700)  !important;
+}
+.heading-1{
+    font-size: calc(var(--font-size-700) * 2.5) !important;
+}
+.heading-2{
+    font-size: calc(var(--font-size-700) * 2) !important;
+}

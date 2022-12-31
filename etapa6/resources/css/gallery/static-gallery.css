@@ -1,0 +1,79 @@
+.static-gallery {
+  display: grid;
+  grid-template-areas:"z-img01 z-img02 z-img03"
+                      "z-img04 z-img05 z-img06"
+                      "z-img07 z-img08 z-img09"
+                      "z-img10 z-img11 z-img12"
+                      "z-img13 z-img14 z-img15";
+  counter-reset: item 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .static-gallery {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .static-gallery-item figcaption {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .static-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"z-img01 z-img02" 
+                        "z-img03 z-img04"
+                        "z-img05 z-img06"
+                        "z-img07 z-img08"
+                        "z-img09 z-img10" 
+                        "z-img11 z-img12"
+                        "z-img13 z-img14" 
+                        "z-img15 z-img16";
+  }
+  .static-gallery-item figcaption {
+    width: 300px;
+  }
+  #empty-image{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .static-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:"z-img01" "z-img02" "z-img03"
+                        "z-img04" "z-img05" "z-img06"
+                        "z-img07" "z-img08" "z-img09"
+                        "z-img10" "z-img11" "z-img12"
+                        "z-img13" "z-img14" "z-img15";
+  }
+  .static-gallery-item figcaption {
+    width: 200px;
+  }
+  #empty-image{
+    display: none;
+  }
+}
+
+.static-gallery .static-gallery-item figure figcaption::before {
+  content: counter(item, lower-roman) ". ";
+  counter-increment: item 1;
+  font-weight: bold;
+}
+
+.static-gallery .static-gallery-item figure img, .static-gallery .static-gallery-item figure {
+  transition: all 0.125s;
+}
+
+.static-gallery .static-gallery-item figure{
+  margin-bottom: 20%;
+}
+
+.static-gallery .static-gallery-item figure:hover{
+  transform: scale(1.2);
+  transform-origin: 50% 0;
+}
+
+.static-gallery .static-gallery-item figure:hover img{
+  border-radius: 15px;
+  opacity: 0.5;
+}

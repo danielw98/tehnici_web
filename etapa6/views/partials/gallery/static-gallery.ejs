@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="resources/css/gallery/static-gallery.css">
+<h1 class="heading-1">Galerie de imagini</h1>
+<p>O galerie ce are in prim-plan cateva dintre <i>dish</i>-urile <b>favorite</b> ale clientilor, surprinse chiar de catre acestia la noi in restaurant.</p>
+<div class="static-gallery">
+  <%
+    var counter = 0;
+    var d=new Date();
+    var luna_curenta = d.getMonth();
+    for (let image of locals.images) {
+      if (((luna_curenta == 11 || luna_curenta == 0 || luna_curenta == 1) && image.season.includes("winter")) || ((luna_curenta == 2 || luna_curenta == 3 || luna_curenta == 4) && image.season.includes("spring")) || ((luna_curenta == 5 || luna_curenta == 6 || luna_curenta == 7) && image.season.includes("summer")) || ((luna_curenta == 8 || luna_curenta == 9 || luna_curenta == 10) && image.season.includes("autumn"))) {
+        if(counter == 4 || counter == 9) {
+  %>
+          <div id="empty-image" class="static-gallery-item">
+            <figure>
+              <picture>
+                  <img style="display: none;">
+              </picture>
+            </figure>
+          </div>
+  <%
+        }
+        counter++;
+  %>
+    <div class="static-gallery-item">
+      <figure>
+        <picture>
+            <source srcset="<%- image.small_path %>" media="(max-width: 700px)">
+            <source srcset="<%- image.medium_path %>" media="(min-width: 700px) and (max-width: 1000px)">
+            <img src="<%- image.path %>" title="<%- image.description %>" alt="<%- image.title %>">
+        </picture>
+        <figcaption>
+            <%- image.description %>
+            <% if (image.credit) { %>
+            <em><%- image.credit %></em>
+            <% } %>
+        </figcaption>
+      </figure>
+    </div>
+  <%    if(counter == 13) {
+          break;
+        }
+      }
+    }
+  %>
+</div>

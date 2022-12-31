@@ -1,0 +1,131 @@
+{
+  "folder_path": "/resources/images/gallery",
+  "images": 
+  [
+    {
+      "path": "burger_with_fries.png",
+      "title": "Burger cu cartofi",
+      "description": "O alegere clasica, cheeseburger cu cartofi prajiti.",
+      "season": "winter spring summer"
+    },
+    {
+      "path": "girl_holding_pizza.png",
+      "title": "Felie de pepperoni",
+      "description": "Una dintre clientele noastre savurand o pizza pepperoni.",
+      "season": "winter spring autumn"
+    },
+    {
+      "path": "gnocchi.png",
+      "title": "Paste gnocchi",
+      "description": "O reteta savuroasa de paste italienesti, gnocchi.",
+      "season": "winter summer autumn"
+    },
+    {
+      "path": "ivan-torres-unsplash.png",
+      "title": "Pizza margherita",
+      "description": "Celebra noastra pizza margherita, simpla, dar plina de gust.",
+      "season": "spring summer autumn",
+      "credit": "Autor: Ivan Torres pe Unsplash"
+    },
+    {
+      "path": "kelvin-t-unsplash.png",
+      "title": "Pizza taraneasca",
+      "description": "Pizza taraneasca, proaspat scoasa din cuptor.",
+      "season": "winter spring summer",
+      "credit": "Autor: Kelvin T pe Unsplash"
+    },
+    {
+      "path": "hand_holding_pizza.png",
+      "title": "Pizza Point",
+      "description": "Pizza Point&#8482; reteta noastra proprie.",
+      "season": "winter spring autumn"
+    },
+    {
+      "path": "pasta.png",
+      "title": "Paste paccheri",
+      "description": "Reteta traditionala, originar italieneasca, paste paccheri.",
+      "season": "winter summer autumn"
+    },
+    {
+      "path": "peter-bravo-de-los-rios-unsplash.png",
+      "title": "Pizza pepperoni",
+      "description": "O felie de pepperoni incarcata cu ingrediente proaspete.",
+      "season": "spring summer autumn",
+      "credit": "Autor: Peter Bravo de los Rios pe Unsplash"
+    },
+    {
+      "path": "pizza.png",
+      "title": "Pizza carnivora",
+      "description": "Pizza carnivora, creata pentru amatorii de pizza cu multe sortimente de carne.",
+      "season": "winter spring summer"
+    },
+    {
+      "path": "saundarya-srinivasan-unsplash.png",
+      "title": "Margherita di bufala",
+      "description": "Margherita di bufala, cu mozzarella proaspata din lapte de bivolita. ",
+      "season": "winter spring autumn",
+      "credit": "Autor: Saundarya Srinivasan pe Unsplash"
+    },
+    {
+      "path": "the-nix-company-unsplash.png",
+      "title": "Pizza pepperoni la pachet",
+      "description": "Pizza Point la pachet, o masa delicioasa, oriunde te-ai afla.",
+      "season": "winter summer autumn",
+      "credit": "Autor: The Nix Company pe Unsplash"
+    },
+    {
+      "path": "pizza_wine_glasses.png",
+      "title": "Pizza quattro formaggi",
+      "description": "Savurand o pizza quattro formaggi in doi.",
+      "season": "spring summer autumn"
+    },
+    {
+      "path": "restaurant.png",
+      "title": "Pizzeria noastra",
+      "description": "Pizzeria noastra, la locatia din Academiei, 14.",
+      "season": "winter spring summer"
+    },
+    {
+      "path": "slice_of_pizza.png",
+      "title": "Pizza pepperoni extra spicy",
+      "description": "Pizza pepperoni 'with a kick of spice'.",
+      "season": "winter spring autumn"
+    },
+    {
+      "path": "spaghetti.png",
+      "title": "Spaghete bolognese",
+      "description": "Spaghete bolognese, specialitatea bucatarului nostru italian, Giuseppe",
+      "season": "winter summer autumn"
+    },
+    {
+      "path": "tiramisu.png",
+      "title": "Titamisu",
+      "description": "Tiramisu, un desert italienesc usor si delicios.",
+      "season": "spring summer autumn"
+    },
+    {
+      "path": "aglio_e_olio.png",
+      "title": "Aglio e olio",
+      "description": "Paste aglio e olio, un dish usor de preparat, insa de-a dreptul irezistibil.",
+      "season": "winter spring summer"
+    },
+    {
+      "path": "ceafa_porc.png",
+      "title": "Ceafa de porc",
+      "description": "Ceafa de porc frageda la gratar.",
+      "season": "winter spring autumn"
+    },
+    {
+      "path": "snitel_pui.png",
+      "title": "Snitel de pui",
+      "description": "Snitel de pui cu sos de usturoi si ketchup.",
+      "season": "winter summer autumn"
+    },
+    {
+      "path": "somon.png",
+      "title": "Somon la gratar",
+      "description": "Somon la gratar, un dish plin de savoare.",
+      "season": "spring summer autumn"
+    }
+  ]
+}

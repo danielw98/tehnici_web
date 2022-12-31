@@ -1,0 +1,107 @@
+header {
+    position: relative;
+    z-index: 100;
+}
+
+/* menu-list */
+#background-menu {
+    background-color: var(--dark-orange);
+    height: 40px;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+}
+
+nav {
+    height: 40px;
+    top: 0;
+    margin-left: calc(50vw - 420px);
+}
+
+ul.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu>li, ul.menu ul>li {
+    height: 40px;
+    width: 140px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 40px;
+}
+
+ul.menu li:hover {
+    overflow: visible;
+}
+
+ul.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    position: relative;
+    display: none;
+}
+
+ul.menu li a:hover, ul.menu li div:hover {
+    box-shadow: 0 0 10px 5px var(--light-grey) inset;
+}
+ul.menu li a {
+    display: block;
+    height: 100%;
+}
+
+ul.menu a, ul.menu div {
+    font-family: var(--font-family-large), serif;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--dark-orange);
+}
+
+ul.menu>li:hover ul {
+    animation-name: animation;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 0;
+    display: block;
+}
+
+ul.menu ul li a:before {
+    content:'→';
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+    transition: 0.5s;
+}
+
+ul.menu ul li a:hover:before {
+    opacity: 1;
+    left: 10px;
+}
+
+@keyframes animation {
+    0%{
+        transform: scale(1, 0);
+    }
+    50%{
+        transform: scale(1, 0.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+#hamburger, #ch-menu {
+    display: none;
+}
+#theme{
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+}

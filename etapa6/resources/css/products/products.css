@@ -1,0 +1,148 @@
+.products-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod-grid div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.product{
+    background-color: var(--dark-orange);
+    overflow: hidden;
+    color: var(--dark-red);
+    border-radius: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.product h2{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+.product h2 a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: normal;
+}
+.product h2 a:hover{
+    color: var(--dark-red);
+    text-decoration: none;
+    font-weight: normal;
+}
+.product figure img{
+    border-radius: 10px;
+}
+.product .product-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+.product p.add{
+    display: inline;
+}
+.val-price, .val-state, .val-ingredients, .val-date, .val-cutlery, .val-category, .val-about, .val-calories, .select i{
+    font-weight: normal !important;
+    color: var(--white);
+}
+.inp-add{
+    vertical-align: middle;
+}
+
+#ul-radio{
+    list-style: none;
+}
+#ul-checkbox{
+    list-style: none;
+}
+input[type="checkbox"]{
+    margin-right: 0.1rem;
+}
+
+#inp-name, #inp-about, #sel-calories, #inp-state, #sel-cutlery{
+    background-color: var(--background);
+    border: 1px solid #ddd;
+    border-radius: .375rem;
+}
+
+#div-ingredients{
+    display: inline-block;
+    vertical-align: top;
+}
+#div-name label, #div-price label, #div-about label, #div-new label, #div-calories label, #div-state label, #div-cutlery label{
+    display: block;
+}
+#div-name, #div-price, #div-about, #div-new, #div-calories, #div-state, #div-cutlery{
+    vertical-align: top;
+}
+#no-products{
+    display: none;
+}
+input[type="radio"]:checked~label{
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.container, .row{
+    margin: 0;
+    padding: 0;
+}
+
+.col{
+    padding-left: 0;
+    padding-right: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#inp-price{
+    width: 100px;
+}
+
+#filter-buttons button{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    box-shadow: 5px 5px 8px var(--light-grey) !important;
+}
+
+input[type="checkbox"]{
+    display: none;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]~.bi-square{
+    color: var(--dark-red);
+    cursor: pointer;
+}
+
+.bi-check-square{
+    display: none;
+}
+
+input[type="checkbox"]:checked~.bi-check-square{
+    display: inline !important;
+    color: var(--dark-red);
+    cursor: pointer;
+}
+input[type="checkbox"]:checked~.bi-square{
+    display: none !important;
+}
+
+option:checked, option:hover{
+    background-color: var(--orange);
+}
+
+#sel-calories{
+    overflow-y: hidden;
+}
